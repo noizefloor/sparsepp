@@ -1,16 +1,12 @@
 #include <memory>
 #include <cassert>
 #include <cstdio>
-#include <stdlib.h> 
-#include <algorithm> 
+#include <algorithm>
 #include <vector>
 
-// enable debugging code in spp_bitset.h
-#define SPP_TEST 1
-
-#include <sparsepp/spp_timer.h>
-#include <sparsepp/spp_memory.h>
-#include <sparsepp/spp_dlalloc.h>
+#include <spp_timer.h>
+#include <spp_memory.h>
+#include <spp_dlalloc.h>
 
 using namespace std;
 
@@ -35,7 +31,7 @@ public:
         srand(43); // always same sequence of random numbers
 
         for (size_t i=0; i<_num_alloc; ++i)
-            _sizes[i] = std::max(2, (rand() % 5) * 2);
+            _sizes[i] = static_cast<uint32_t>(std::max(2, (rand() % 5) * 2));
                                  
         spp::Timer<std::milli> timer;
 

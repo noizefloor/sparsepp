@@ -1,28 +1,51 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+#Visual Studio Dateien ignorieren
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+*.ipch
+*.opensdf
+*.opendb
+*.sdf
+*.VC.db
 
-# Folder config file
-Desktop.ini
+# CMake
+cmake-build-*/
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Clion
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
+# Visual Studio
+/.vs
+CMakeSettings.json
 
 # =========================
 # Operating System Files
 # =========================
 
 # OSX
-# =========================
 
 .DS_Store
 .AppleDouble
@@ -31,17 +54,3 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk

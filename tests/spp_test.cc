@@ -41,7 +41,7 @@
     #pragma warning( disable : 4996 ) // 'fopen': This function or variable may be unsafe
 #endif
 
-#include <sparsepp/spp.h>
+#include <spp.h>
 
 #ifdef _MSC_VER 
     #pragma warning( disable : 4127 ) // conditional expression is constant

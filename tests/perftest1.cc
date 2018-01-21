@@ -2,14 +2,9 @@
 // -----------------------------------------------------------------------
 #include <fstream>
 #include <iostream>
-#include <ctime>
-#include <cstdio>
-#include <climits>
-#include <functional>
 #include <vector>
-#include <utility>
 
-#include <sparsepp/spp_timer.h>
+#include <spp_timer.h>
 
 #define SPP 1
 #define DENSE 0
@@ -17,7 +12,7 @@
 #define STD 0
 
 #if SPP
-    #include <sparsepp/spp.h>
+    #include <spp.h>
 #elif DENSE
     #include <google/dense_hash_map>
 #elif SPARSE
